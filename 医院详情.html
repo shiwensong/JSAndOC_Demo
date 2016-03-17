@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <!-- base href="http://120.25.224.21/teay/" -->
+    
+    <title>医院详情</title>
+    
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="expires" content="0">    
+	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+	<meta http-equiv="description" content="This is my page">
+	
+	<link href="%E5%8C%BB%E9%99%A2%E8%AF%A6%E6%83%85_files/bootstrap.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="%E5%8C%BB%E9%99%A2%E8%AF%A6%E6%83%85_files/jquery.js"></script>
+    <script src="%E5%8C%BB%E9%99%A2%E8%AF%A6%E6%83%85_files/bootstrap.js"></script>
+
+  </head>
+
+<body>
+ 
+
+<div class="container">
+	
+	
+	<div class="row">
+		<div class="col-xs-12">
+				<img src="%E5%8C%BB%E9%99%A2%E8%AF%A6%E6%83%85_files/1441070698285U7J2.jpg" class="img-thumbnail">
+		</div>
+	</div>
+	
+	<div class="row" style="margin-top:6px;">
+		<div class="col-xs-4" style="text-align: center;" onclick="ockurl('zy')">
+			<img src="%E5%8C%BB%E9%99%A2%E8%AF%A6%E6%83%85_files/yyhm.png" style="height:41px;">
+			<div style="width:100%; height:2px; border-top:1px solid #A424A8; display: block;" id="abc1"></div>
+		</div>
+		<div class="col-xs-4" style="text-align: center; color: #888888; font-weight: bold;" onclick="ockurl('yh')">
+			<ul class="list-unstyled" style="margin-bottom: 1px;">
+		  		<li>1</li>
+		  		<li>约惠</li>
+			</ul>
+			<div style="width:100%; height:2px; border-top:1px solid #A424A8; display: none;" id="abc2"></div>
+		</div>
+		<div class="col-xs-4" style="text-align: center; color: #888888; font-weight: bold;" onclick="ockurl('riji')">
+			<ul class="list-unstyled" style="margin-bottom: 1px;">
+		  		<li>0</li>
+		  		<li>日记</li>
+			</ul>
+			<div style="width:100%; height:2px; border-top:1px solid #A424A8; display: none;" id="abc3"></div>
+		</div>
+	</div>
+	<div class="row">
+  		<div class="span12" style="background-color:#F5F5F5;">&nbsp;</div>
+  	</div>
+
+	
+</div>
+
+<div style="margin-top:2px;">
+	<iframe style="float:left; width:100%; height:100%;" src="%E5%8C%BB%E9%99%A2%E8%AF%A6%E6%83%85_files/appyyjianjie.html" name="iframe_a" id="iframe_a" frameborder="0"></iframe>
+</div>
+
+<script type="text/javascript">
+	function ockurl(tp){
+		if(tp == "zy"){
+			//url
+			document.getElementById("iframe_a").src="/teay/zxyy/appyyjianjie?yyid=26"; 
+			document.getElementById("abc1").style.display="block";
+			document.getElementById("abc2").style.display="none";
+			document.getElementById("abc3").style.display="none";
+		}else if(tp == "yh"){
+			document.getElementById("iframe_a").src="/teay/temai/appyyyh?yyid=26"; 
+			document.getElementById("abc1").style.display="none";
+			document.getElementById("abc2").style.display="block";
+			document.getElementById("abc3").style.display="none";
+		}else if(tp == "riji"){
+			document.getElementById("iframe_a").src="/teay/note/appyynote?yyid=26"; 
+			document.getElementById("abc1").style.display="none";
+			document.getElementById("abc2").style.display="none";
+			document.getElementById("abc3").style.display="block";	
+		}
+	}
+	
+</script>
+
+
+
+<div id="xunlei_com_thunder_helper_plugin_d462f475-c18e-46be-bd10-327458d045bd"></div></body></html>
